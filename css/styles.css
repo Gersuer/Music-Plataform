@@ -8,7 +8,7 @@ font-family: 'Roboto', sans-serif;
 :root {
     --verdePrincipal: #1DB954;
     --preto: #191414;
-    --preto-leve: #242323;
+    --preto-leve: #2f2f2f;
     --letras: #9e9e9e;
     --menu-hover: #494949;
 }
@@ -23,14 +23,13 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-
 }
 
 .container {
     position: relative;
     width: 100vw;
     height: 100vh;
-    border: solid red 1px;
+    display: flex;
 }
 
 .menu {
@@ -117,4 +116,59 @@ body {
 .rodape {
     height: 10%;
     border: solid blue 1px;
+}
+
+
+/* Container principal */
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.main-header{
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem 2rem;
+    background: var(--preto-leve);
+    display: flex;
+}
+
+.menu-control{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-control img{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    width: 20rem;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    outline: none;
+    background: var(--menu-hover);
+    border: none;
+    color: #9e9e9e;
+}
+
+.search input::placeholder{
+    color: #9e9e9e;
+}
+
+
+.main-content{
+    background: var(--preto);
 }
