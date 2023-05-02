@@ -16,20 +16,20 @@
                 <img src="./assets/instrumento-de-guitarra.png" alt="Logo spotify">
             </div>
             <div class="menu-container">
-                <a class="menu-item" href="#">
+                <a class="menu-item" id="home" href="#">
                     <img class="icon" src="./assets/casa.png" alt="">
                     <p>Home</p>
                 </a>
-                <a class="menu-item" href="#">
+                <a class="menu-item" id="playlists" href="#">
                     <img class="icon" src="./assets/adicionar-a-playlist.png" alt="">
                     Playlists
                 </a>
-                <a class="menu-item" href="#">
+                <a class="menu-item" id="the-bests" href="#">
                     <img class="icon" src="./assets/fone-de-ouvido.png" alt="">
                     The bests
                 </a>
 
-                <a class="menu-item" href="#">
+                <a class="menu-item" id="descubra" href="#">
                     <img class="icon" src="./assets/descubra.png" alt="">
                     Descubra
                 </a>
@@ -46,6 +46,7 @@
             </div>
         </nav>
         <div class="main">
+            <!-- Cabecalho do conteudo principal -->
             <header class="main-header">
                 <div class="menu-control">
                     <img src="./assets/voltar.png" alt="">
@@ -56,9 +57,13 @@
                     ">
                 </div>
             </header>
-            <div class="main-content">
+            <!-- Fim do cabecalho do conteudo principal -->
+
+            <!-- Pagin de abertura -->
+            <div class="main-content" id="main-content">
+                <!-- Inicio da página home -->
                 <div class="main-content-title">
-                    <p>AS MELHORRES MÚSICAS JÁ ESTÃO DISPONÍVEIS PARA VOCÊ!                        
+                    <p>AS MELHORRES MÚSICAS JÁ ESTÃO DISPONÍVEIS PARA VOCÊ!
                     </p>
 
                     <div class="main-content-title-button">
@@ -68,10 +73,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-content-banner"></div>
+                <div class="main-content-banner">
 
+                </div>
+                <!-- Final da página home -->
             </div>
-        </div>
+
+            <!-- Container de músicas -->
+            <div class="music-container-disabled" id="music-container">
+                <div class="music-container-title">
+                    <div class="music-container-img">
+                        <img class="music-title-img" src="./assets/music-exemple.jpg" alt="">
+                    </div>
+
+                    <div class="music-container-title-text">
+                        <h1>THE BEST SONGS</h1>
+                        <p>As melhores músicas eletrônicas para você ouvir, são encontradas aqui.</p>
+                    </div>
+                </div>
+
+                <div class="songs-list">
+                    <div class="song">
+                        <img src="./assets/banda2.jpg" alt="" class="song-img">
+                        <p class="song-name">Mashmallow</p>
+                        <button class="play">Play</button>
+                    </div>
+                    <div class="song">
+                        <img src="./assets/banda3.jpeg" alt="" class="song-img">
+                        <p class="song-name">Smile Guy</p>
+                        <button class="play">Play</button>
+                    </div>
+                    <div class="song">
+                        <img src="./assets/banda1.jpeg" alt="" class="song-img">
+                        <p class="song-name">Guns'N roses</p>
+                        <button class="play">Play</button>
+                    </div>
+                    <div class="song">
+                        <img src="./assets/banda4.jpeg" alt="" class="song-img">
+                        <p class="song-name">Brainless</p>
+                        <button class="play">Play</button>
+                    </div>
+                    <div class="song">
+                        <img src="./assets/banda5.jpg" alt="" class="song-img">
+                        <p class="song-name">Sona Fliperama</p>
+                        <button class="play">Play</button>
+                    </div>
+
+                </div>
+            </div>
     </section>
 
 
